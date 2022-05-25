@@ -41,7 +41,7 @@ namespace ConsoleApp7
             {
                 for (j = 0; j < 2; j++)
                 {
-                    Console.WriteLine(ans[i, j] + " ");
+                    Console.Write(ans[i, j] + " ");
                 }
                 Console.WriteLine();
             }
