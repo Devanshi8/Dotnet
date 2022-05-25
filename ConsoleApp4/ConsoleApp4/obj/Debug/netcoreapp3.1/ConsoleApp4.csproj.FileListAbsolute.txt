@@ -1,0 +1,14 @@
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.exe
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.deps.json
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.runtimeconfig.json
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.runtimeconfig.dev.json
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.dll
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.pdb
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.csproj.AssemblyReference.cache
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.AssemblyInfoInputs.cache
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.AssemblyInfo.cs
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.csproj.CoreCompileInputs.cache
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.dll
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.pdb
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.genruntimeconfig.cache
