@@ -15,11 +15,11 @@ namespace ConsoleApp10
         static int factnum(int n)
         {
             int i=1;
-            while(n>1) //5>1 4>1 3>1 2>1 1>1
+            while(n>1) //5>1 4>1 3>1 2>1 1>1 0>1(false condition)
             {
                 i=i*n;   // i=1*5=5  5*4=20  20*3=60  60*2=120
                 
-                n--;    //n=4 n=3 n=2 n=1
+                n--;    //n=4 n=3 n=2 n=1 n=0
                 
             }
             return i;  //i=120

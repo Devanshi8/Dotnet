@@ -17,14 +17,14 @@ namespace ConsoleApp4
             string name = Console.ReadLine();
             
             Boolean flag = false;
-              
+            int len = name.Length;  
             
                
-                for(i=0;i<name.Length;i++)
+                for(i=0;i<len;i++)
                 {
-                    for (j = name[name.Length]; j > 0; j--)
+                    for (j = name[len-1]; j > 0; j--)
                     {
-                        if(name[i]==name[name.Length])
+                        if(name[i]==name[j])
                         {
                             flag = true;
                         }
