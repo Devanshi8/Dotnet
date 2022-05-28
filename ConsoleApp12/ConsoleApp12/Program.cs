@@ -30,8 +30,9 @@ namespace ConsoleApp12
             Console.WriteLine("Enter Employee Gender : ");
             EmpGender = Console.ReadLine();
 
-            Console.WriteLine("Enter Employee Salary : ");
-          
+            //Console.WriteLine("Enter Employee Salary : ");
+            //Salary= Convert.ToInt32(Console.ReadLine());
+
         }
         public void Printdata()
         {
