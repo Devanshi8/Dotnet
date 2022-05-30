@@ -68,13 +68,11 @@ namespace ConsoleApp14
 
 //Output:
 /*
- public int page
-        {
-            get
-            {
-                return numPages;
-            }
-        }
+
+Number Of Page : 16
+Number Of Page : 24
+Number Of Page : 64
+
 */
 
 
