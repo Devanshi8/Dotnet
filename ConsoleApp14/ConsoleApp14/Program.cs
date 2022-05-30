@@ -50,7 +50,7 @@ namespace ConsoleApp14
     }
     class StudentProfessorTest
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             //Create a new Person and make him say hello
             Person pr = new Person();
