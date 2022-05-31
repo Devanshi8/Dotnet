@@ -11,21 +11,31 @@ namespace ConsoleApp4
             dad=>dad
             madam=>madam
          */
-        static void Main(string[] args)
+        static void Main()
         {
             int i, j;
             string name = Console.ReadLine();
-            
+            string str=name;
             Boolean flag = false;
-            int len = name.Length;  
-            
-               
-                for(i=0;i<len;i++)
+            int len = name.Length;
+
+            for (i = 0; i < len; i++)
+            {
+                for (j = len; j >=0; j--)
                 {
-                    for (j = name[len-1]; j > 0; j--)
+                    str[i] = name[j];
+                }
+            }
+
+
+         /*       for (i=0;i<len;i++)
+                {
+                    for (j =name.Length; j > 0; j--)
                     {
                         if(name[i]==name[j])
                         {
+                            Console.WriteLine(name[i]);
+                            Console.WriteLine(name[j]);
                             flag = true;
                         }
                     }
@@ -40,8 +50,8 @@ namespace ConsoleApp4
                 Console.WriteLine("String is not Palindrome");
             }
 
-
-
+            
+            */
         }
     }
 }
