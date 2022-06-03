@@ -1,0 +1,13 @@
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\bin\Debug\netcoreapp3.1\ConsoleApp21.exe
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\bin\Debug\netcoreapp3.1\ConsoleApp21.deps.json
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\bin\Debug\netcoreapp3.1\ConsoleApp21.runtimeconfig.json
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\bin\Debug\netcoreapp3.1\ConsoleApp21.runtimeconfig.dev.json
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\bin\Debug\netcoreapp3.1\ConsoleApp21.dll
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\bin\Debug\netcoreapp3.1\ConsoleApp21.pdb
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\obj\Debug\netcoreapp3.1\ConsoleApp21.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\obj\Debug\netcoreapp3.1\ConsoleApp21.AssemblyInfoInputs.cache
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\obj\Debug\netcoreapp3.1\ConsoleApp21.AssemblyInfo.cs
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\obj\Debug\netcoreapp3.1\ConsoleApp21.csproj.CoreCompileInputs.cache
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\obj\Debug\netcoreapp3.1\ConsoleApp21.dll
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\obj\Debug\netcoreapp3.1\ConsoleApp21.pdb
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ConsoleApp21\ConsoleApp21\obj\Debug\netcoreapp3.1\ConsoleApp21.genruntimeconfig.cache

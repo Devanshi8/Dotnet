@@ -18,9 +18,28 @@ Call A function :-
 create function empid(@ID varchar)
 returns varchar(100) as 
 Begin
-return(Select CONCAT(employeename,id) as Empid from Employee where id =@ID);
+return(Select CONCAT('EMP',id) as Empid from Employee where id =@ID);
+End
+drop function empid;
+Select * from Employee;
+Select dbo.empid(3);
+
+--Procedure
+/*
+
+use for manipulation DML->insert update delete,call
+
+*/
+
+create proc AddEmployee(@empname varchar(20),@id int,@employeeid int,@salary int)
+As
+Begin
+insert into Employee values(@empname,@id,@employeeid,@salary);
 End
 
+drop proc AddEmployee;
+
 Select * from Employee;
-Select dbo.empid(5);
+exec dbo.AddEmployee 'Bill',6,4595,6000;
+
 
