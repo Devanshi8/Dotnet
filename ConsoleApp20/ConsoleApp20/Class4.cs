@@ -15,7 +15,7 @@ namespace ConsoleApp20
             q.Enqueue("vb.net");
             q.Enqueue("asp.net");
             q.Enqueue("sql server");
-            q.Dequeue();
+            q.Dequeue();//remove first element
             foreach (var item in q)
             {
                 Console.WriteLine(item);
