@@ -17,31 +17,57 @@ namespace ConsoleApp4
             string name = Console.ReadLine();
             string str=name;
             Boolean flag = false;
-            int len = name.Length;
+            int len = str.Length;
 
+           
+                for (j = len-1; j >=0; j--)
+                {
+                    Console.WriteLine(str[j]);
+                }
             for (i = 0; i < len; i++)
             {
-                for (j = len; j >=0; j--)
+                for (j = str.Length-1; j >= 0; j--)
                 {
-                    str[i] = name[j];
+                    if (name[i] == str[j])
+                    {
+
+                    }
                 }
+                if (flag == true)
+                {
+                    Console.WriteLine("String is Palindrome");
+                }
+                else
+                {
+                    Console.WriteLine("String is not Palindrome");
+                }
+
             }
 
 
-         /*       for (i=0;i<len;i++)
+            /*       for (i=0;i<len;i++)
+                   {
+                       for (j =name.Length; j > 0; j--)
+                       {
+                           if(name[i]==name[j])
+                           {
+                               Console.WriteLine(name[i]);
+                               Console.WriteLine(name[j]);
+                               flag = true;
+                           }
+                       }
+                   } 
+             for (i = 0; i < len; i++)
+            {
+                if (str[i] == name[i])
                 {
-                    for (j =name.Length; j > 0; j--)
-                    {
-                        if(name[i]==name[j])
-                        {
-                            Console.WriteLine(name[i]);
-                            Console.WriteLine(name[j]);
-                            flag = true;
-                        }
-                    }
-                } 
-             
-            if (flag == true)
+                    flag = true;
+                    Console.Write(str[i]);
+                    Console.Write(name[i]);
+                }
+            }
+
+             if (flag == true)
             {
                 Console.WriteLine("String is Palindrome");
             }
@@ -50,8 +76,7 @@ namespace ConsoleApp4
                 Console.WriteLine("String is not Palindrome");
             }
 
-            
-            */
+               */
         }
     }
 }

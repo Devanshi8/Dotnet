@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             /* int a = 15,b=10;
              string s = "hello";
