@@ -11,9 +11,28 @@
     <td>CustomerAmount :</td>
     <td><input [(ngModel)]="CustomerModel.CustomerAmount" type="text"></td>
   </tr>
-  <input type="Submit">
+  <input type="Submit" (click)="AddCustomer()">
 </table>
-{{myname}}<br>
-{{CustomerModel.CustomerName}}<br>
-{{CustomerModel.CustomerCode}}<br>
-{{CustomerModel.CustomerAmount}}
+
+
+<table border="1">
+  <th bgcolor=#f60089>CustomerCode</th>
+  <th bgcolor=#f08099>CustomerName</th>
+  <th bgcolor=#f08099>CustomerAmount</th>
+  <th bgcolor="#f08099">Actions</th>
+  <tr *ngFor="let item of CustomerModels">
+    <td>
+      {{item.CustomerCode}}
+    </td>
+    <td>
+      {{item.CustomerName}}
+    </td>
+    <td>
+      {{item.CustomerAmount}}
+    </td>
+    <td>
+      <input type="button" value="Edit"  (click)="EditCustomer(item)"/>
+      <input type="button" value="Delete"  (click)="DeleteCustomer(item)"/>
+    </td>
+  </tr>
+</table>
