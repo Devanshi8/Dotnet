@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Supplier } from './supplier.model';
 
 @Component({
-  selector: 'app-supplier',
+  
   templateUrl: './supplier.component.html'
 })
 export class SupplierComponent {
