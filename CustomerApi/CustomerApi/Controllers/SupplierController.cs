@@ -10,24 +10,24 @@ namespace CustomerApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomerController : ControllerBase
+    public class SupplierController : ControllerBase
     {
-        CustomerDB1Context db;
-        public CustomerController(CustomerDB1Context _db)
+        CustomerDB1Context db1;
+        public SupplierController(CustomerDB1Context _db)
         {
-            db = _db;
+            db1 = _db;
         }
         [HttpGet]
-        public IEnumerable<Customer> Get()
+        public IEnumerable<Supplier> Get()
         {
-            return db.Customers;
+            return db1.Suppliers;
         }
 
         [HttpPost]
-        public string Post([FromBody]Customer customer)
+        public string Post([FromBody] Supplier supplier)
         {
-            db.Customers.Add(customer);
-            db.SaveChanges();
+            db1.Suppliers.Add(supplier);
+            db1.SaveChanges();
             return "success";
         }
     }

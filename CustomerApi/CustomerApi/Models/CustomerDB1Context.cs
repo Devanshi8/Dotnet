@@ -43,9 +43,11 @@ namespace CustomerApi.Models
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
+
                 entity.Property(e => e.CustomerName)
                     .HasMaxLength(50)
                     .IsUnicode(false);
+                    
             });
 
             modelBuilder.Entity<Supplier>(entity =>
@@ -58,9 +60,12 @@ namespace CustomerApi.Models
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
+
+
                 entity.Property(e => e.SupplierName)
                     .HasMaxLength(50)
                     .IsUnicode(false);
+                    
             });
 
             OnModelCreatingPartial(modelBuilder);
