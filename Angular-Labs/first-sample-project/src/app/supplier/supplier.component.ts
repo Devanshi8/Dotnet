@@ -17,9 +17,9 @@ export class SupplierComponent {
   AddSupplier() {
     console.log(this.SupplierModel);
     var supplierdto={
-      customerCode:this.SupplierModel.supplierCode,
-      cutomerName:this.SupplierModel.supplierName,
-      customerAmount:Number(this.SupplierModel.supplierAmount)                
+      supplierCode:this.SupplierModel.supplierCode,
+      supplierName:this.SupplierModel.supplierName,
+      supplierAmount:Number(this.SupplierModel.supplierAmount)                
     }
   
       this.httpc.post("https://localhost:44315/api/Supplier",supplierdto).subscribe(res=>this.PostSuccess(res),res=>this.PostError(res));

@@ -20,7 +20,7 @@ export class CustomerComponent {
     console.log(this.CustomerModel);
     var customerdto={
       customerCode:this.CustomerModel.customerCode,
-      cutomerName:this.CustomerModel.customerName,
+      customerName:this.CustomerModel.customerName,
       customerAmount:Number(this.CustomerModel.customerAmount),                
     }
   
