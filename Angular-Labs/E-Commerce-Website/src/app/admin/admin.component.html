@@ -1,0 +1,50 @@
+<br><table>
+    
+    <tr>
+      <td>AdminId :</td>
+      <td><input [(ngModel)]="AdminModel.adminID" type="text"></td>
+    </tr>
+    <tr>
+        <td>AdminName :</td>
+        <td><input [(ngModel)]="AdminModel.adminName" type="text"></td>
+      </tr>
+    <tr>
+        <td>New Category :</td>
+        <td><input [ngModel]="AdminModel.addCategory" type="text"></td>
+        <td><input type="submit" click="AddCategory()" value="Add Category"></td>
+    </tr>
+    <tr>
+        <td>Add New Products :</td>
+        <td><input type="text"></td>
+        <td><input type="submit" click="AddProduct()" value="Add Product"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&nbsp;&nbsp;<input type="submit" (click)="AddAdmin()" style="background-color:#8FD8FF ;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" (click)="getData()" value="getData" style="background-color:#8FD8FF ;"></td>
+    </tr>
+   
+  </table>
+  
+  <br>
+  <table border="1">
+    <th bgcolor=#f60089>AdminId</th>
+    <th bgcolor=#f08099>AdminName</th>
+    
+    <th bgcolor="#f08099">Actions</th>
+    <tr *ngFor="let item of AdminModels" bgcolor="ffff33">
+      <td>
+        {{item.adminID}}
+      </td>
+      <td>
+        {{item.adminName}}
+      </td>
+      <td>
+        {{item.addCategory}}
+      </td>
+      <td>
+        <input type="button" value="Edit" (click)="EditAdmin(item)" />
+        <input type="button" value="Delete" (click)="DeleteAdmin(item)" />
+      </td>
+    </tr>
+  </table>

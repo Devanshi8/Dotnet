@@ -69,6 +69,8 @@ namespace ECommerceApi.Models
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
+                entity.Property(e => e.UserAddress).HasMaxLength(200);
+
                 entity.Property(e => e.UserId)
                     .HasMaxLength(50)
                     .HasColumnName("UserID");
