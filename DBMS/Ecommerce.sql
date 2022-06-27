@@ -8,9 +8,37 @@ create table TblCategory(id int identity(1,1) primary key, CatName nvarchar(100)
 
 create table addcart(id int identity(1,1) primary key, ProductName nvarchar,ProductImage nvarchar(100),ProductDescription nvarchar(100),ProductFinal decimal(18,2),ProductQuantity int);
 
-select* from addcart;
-select * from OrderList;
 select * from TblLogin;
-
 select * from tblProduct;
 select * from TblCategory;
+
+
+
+select* from addcart;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+select * from OrderList;
+
