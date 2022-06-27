@@ -67,3 +67,4 @@ C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ECommerceApi\ECommerceApi
 C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ECommerceApi\ECommerceApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ECommerceApi\ECommerceApi\obj\Debug\netcoreapp3.1\ECommerceApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ECommerceApi\ECommerceApi\obj\Debug\netcoreapp3.1\ECommerceApi.csproj.CopyComplete
+C:\Users\devan\OneDrive\Desktop\Dot-Net-Technology-cap\ECommerceApi\ECommerceApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

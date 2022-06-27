@@ -1,0 +1,24 @@
+<div class="container-fluid"><br><br>
+    <div class="navbar-dark bg-primary">
+        <h2 align="center">Products</h2>
+    </div>
+</div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4 mb-3" *ngFor="let product of products">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/{{product.productImage}}" width="150" height="200"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.productName}}</h5>
+                    <p class="card-text">Description : {{product.productDescription}}</p>
+                    <p class="card-text">Quantity : {{product.productQuantity}}</p>
+                    <p class="card-text" style="text-decoration: line-through;">Rs. {{product.productMrp}}</p>
+                    <p class="card-text">New Price: Rs. {{product.productFinal}}</p>
+                    <p class="card-text" style="color: green;">{{product.productDiscount}}% off</p>
+                    <input type="button" value="Buy" (click)="AddCart(product)" class="btn btn-primary">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

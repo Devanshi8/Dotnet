@@ -17,9 +17,11 @@ namespace ECommerceApi.Models
         {
         }
 
-        public virtual DbSet<Admin> Admins { get; set; }
-        public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<UserDetail> UserDetails { get; set; }
+        public virtual DbSet<Addcart> Addcarts { get; set; }
+        public virtual DbSet<OrderList> OrderLists { get; set; }
+        public virtual DbSet<TblCategory> TblCategories { get; set; }
+        public virtual DbSet<TblLogin> TblLogins { get; set; }
+        public virtual DbSet<TblProduct> TblProducts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -34,48 +36,73 @@ namespace ECommerceApi.Models
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
 
-            modelBuilder.Entity<Admin>(entity =>
+            modelBuilder.Entity<Addcart>(entity =>
             {
-                entity.ToTable("Admin");
+                entity.ToTable("addcart");
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.AdminId)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("AdminID");
+                entity.Property(e => e.ProductDescription).HasMaxLength(100);
 
-                entity.Property(e => e.AdminName).HasMaxLength(50);
+                entity.Property(e => e.ProductFinal).HasColumnType("decimal(18, 2)");
+
+                entity.Property(e => e.ProductImage).HasMaxLength(100);
+
+                entity.Property(e => e.ProductName).HasMaxLength(1);
             });
 
-            modelBuilder.Entity<Product>(entity =>
+            modelBuilder.Entity<OrderList>(entity =>
             {
-                entity.ToTable("Product");
+                entity.ToTable("OrderList");
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.Category).HasMaxLength(50);
+                entity.Property(e => e.ProductMrp).HasColumnType("decimal(18, 2)");
 
-                entity.Property(e => e.ProductId)
-                    .HasMaxLength(50)
-                    .HasColumnName("ProductID");
+                entity.Property(e => e.ProductName).HasMaxLength(100);
 
-                entity.Property(e => e.ProductName).HasMaxLength(50);
+                entity.Property(e => e.UserName)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
             });
 
-            modelBuilder.Entity<UserDetail>(entity =>
+            modelBuilder.Entity<TblCategory>(entity =>
             {
-                entity.ToTable("UserDetail");
+                entity.ToTable("TblCategory");
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.UserAddress).HasMaxLength(200);
+                entity.Property(e => e.CatName).HasMaxLength(100);
+            });
 
-                entity.Property(e => e.UserId)
-                    .HasMaxLength(50)
-                    .HasColumnName("UserID");
+            modelBuilder.Entity<TblLogin>(entity =>
+            {
+                entity.ToTable("TblLogin");
 
-                entity.Property(e => e.UserName).HasMaxLength(50);
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Password).HasMaxLength(100);
+
+                entity.Property(e => e.UserName).HasMaxLength(100);
+            });
+
+            modelBuilder.Entity<TblProduct>(entity =>
+            {
+                entity.ToTable("TblProduct");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.ProductDescription).HasMaxLength(100);
+
+                entity.Property(e => e.ProductDiscount).HasColumnType("decimal(18, 2)");
+
+                entity.Property(e => e.ProductFinal).HasColumnType("decimal(18, 2)");
+
+                entity.Property(e => e.ProductImage).HasMaxLength(100);
+
+                entity.Property(e => e.ProductMrp).HasColumnType("decimal(18, 2)");
+
+                entity.Property(e => e.ProductName).HasMaxLength(100);
             });
 
             OnModelCreatingPartial(modelBuilder);

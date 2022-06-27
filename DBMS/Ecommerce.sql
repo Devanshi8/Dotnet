@@ -1,8 +1,16 @@
-Create table Admin(id int identity(1,1) primary key,AdminID varchar(50),AdminName nvarchar(50));
+Create table OrderList(id int identity(1,1) primary key,UserName varchar(100),ProductName nvarchar(100),ProductMrp decimal(18,2));
 
-create table UserDetail(id int identity(1,1)primary key, UserID nvarchar(50),UserName nvarchar(50));
+create table TblLogin(id int identity(1,1)primary key, UserName nvarchar(100),Password nvarchar(100),IsAdmin int);
 
-create table Product(id int identity(1,1)primary key, ProductID nvarchar(50),ProductName nvarchar(50),Category nvarchar(50));
+create table TblProduct(id int identity(1,1)primary key, ProductName nvarchar(100),ProductDescription nvarchar(100), CatId int,ProductImage nvarchar(100),ProductMrp decimal(18,2),ProductDiscount decimal(18,2),ProductFinal decimal(18,2),ProductQuantity int);
 
-alter table UserDetail Add UserAddress nvarchar(200);
-select * from UserDetail;
+create table TblCategory(id int identity(1,1) primary key, CatName nvarchar(100));
+
+create table addcart(id int identity(1,1) primary key, ProductName nvarchar,ProductImage nvarchar(100),ProductDescription nvarchar(100),ProductFinal decimal(18,2),ProductQuantity int);
+
+select* from addcart;
+select * from OrderList;
+select * from TblLogin;
+
+select * from tblProduct;
+select * from TblCategory;

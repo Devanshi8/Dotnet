@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "yMFzlbIZhGTqAVS6QNdt6WylqF1LIeVuugRxZizg9/lAW7Ovv24uayenve0IPY43mnyQMDvFtBg8TbMOjq2l0A==",
+  "dgSpecHash": "vWBIDU5xaW252qWxszbhSpYQB/7luhTGvUt3NvROcIkjTI5ELC4yo3wIJkh4TDl5eeegBciwhJWEioolkQcCdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\devan\\OneDrive\\Desktop\\Dot-Net-Technology-cap\\ECommerceApi\\ECommerceApi\\ECommerceApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\devan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.24\\microsoft.aspnetcore.authentication.jwtbearer.3.1.24.nupkg.sha512",
     "C:\\Users\\devan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\devan\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\devan\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

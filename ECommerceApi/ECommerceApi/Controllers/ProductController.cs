@@ -18,17 +18,10 @@ namespace ECommerceApi.Controllers
             db = _db;
         }
         [HttpGet]
-        public IEnumerable<Product> Get()
+        public IEnumerable<TblProduct> GetProducts()
         {
-            return db.Products;
+            return db.TblProducts;
         }
-
-        [HttpPost]
-        public string Post([FromBody] Product product)
-        {
-            db.Products.Add(product);
-            db.SaveChanges();
-            return "success";
-        }
+        
     }
 }

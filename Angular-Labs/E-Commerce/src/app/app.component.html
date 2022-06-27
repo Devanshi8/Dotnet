@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand"><img src="../../assets/logo.png" width="10%" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" routerLink="/home">Ecommerce</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page"  *ngIf="LoggedIn(true)" routerLink="/product">Category <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  *ngIf="LoggedIn(false)" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="LoggedIn(false)" routerLink="/register">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  *ngIf="LoggedIn(true)" routerLink="/account">My Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  *ngIf="LoggedIn(true)" routerLink="/cart">My Cart</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  *ngIf="LoggedIn(true)" (click)="LogOut()" style="color:red">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- footer -->
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="card text-center">
+  <div class="card-header">
+    <p>Follow on : <a href="#"><img src="../../assets/twitterlogo.png" width="30px" alt="twitter">
+        <img src="../../assets/Instagramlogo.png" width="30px" alt="insta">
+        <img src="../../assets/fblogo.png" width="18px" alt="fb">
+        <img src="../../assets/linkedin-logo.png" width="28px" alt=""></a></p>
+  </div>
+  <div  style="background-color: #8FD8FF;"class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">Contact us : 022-987412 </p>
+  </div>
+  <div class="card-footer text-muted">
+    &copy;2022
+  </div>
+</div>
