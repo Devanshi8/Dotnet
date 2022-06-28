@@ -25,22 +25,9 @@ export class AccountComponent implements OnInit {
   order: addcart = new addcart();
   orders: Array<addcart> = new Array<addcart>();
   Ordered() {
-    // console.log(this.order);
-    // var customerdto={
-    //   productName:this.productName,
-    //   customerName:this.CustomerModel.customerName,
-    //   customerAmount:Number(this.CustomerModel.customerAmount),                
+              
   }
 
-  //     this.httpc.post("https://localhost:44315/api/Customer",customerdto).subscribe(res=>this.PostSuccess(res),res=>this.PostError(res));
-  //     this.CustomerModel = new Customer();
-  // }
-  // PostSuccess(res:any){
-  //   console.log(res);
-  // }
-  // PostError(res:any){
-  //   console.log(res);
-  // }
 
 
 
