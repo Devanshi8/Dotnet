@@ -8,5 +8,9 @@
     <Folder Include="Resources\Images\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.12.0" />
+  </ItemGroup>
+
 
 </Project>
