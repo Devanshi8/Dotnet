@@ -1,0 +1,55 @@
+<div class="container-fluid">
+    <table align="center">
+        <tr>
+            <td>ImageName :</td>
+            <td><input [(ngModel)]="image.imageName" type="text"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>Image Path :</td>
+            <td><input [(ngModel)]="image.image" type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" (click)="AddImage()"></td>
+
+            <td><input type="submit" value="Get Image" (click)="getData()"></td>
+        </tr>
+    </table>
+    <br><br>
+    <table border="1">
+        <th bgcolor="#8FD8FF">Id</th>
+        <th bgcolor="#8FD8FF">ImageName</th>
+        <th bgcolor="#8FD8FF">Image Path</th>
+        <tr *ngFor="let pic of images" bgcolor="#FFF99">
+            <td>
+                {{pic.id}}
+            </td>
+            <td>
+                {{pic.imageName}}
+            </td>
+            <td>
+                {{pic.image}}
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="container-fluid"><br><br>
+    <div class="navbar-dark bg-primary">
+        <h2 align="center">Images</h2>
+    </div>
+</div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4 mb-3" *ngFor="let pic of images">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/{{pic.image}}" width="300" height="300"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{pic.imageName}}</h5>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
