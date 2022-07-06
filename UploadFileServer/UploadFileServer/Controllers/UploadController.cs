@@ -33,7 +33,7 @@ namespace UploadFileServer.Controllers
                     {
                         file.CopyTo(stream);
                     }
-                    string connectionString = "DefaultEndpointsProtocol=https;AccountName=devanshi11;AccountKey=by/6i3mgwC5f70jMjWVAgpHzrk+BYL9R2XKnC/srF0a5zVDN6vJienDgWgkRsETj2R67rpic/Gbz+AStOfG1Sg==;EndpointSuffix=core.windows.net";
+                    string connectionString = "";
                     string containerName = "images";
                     BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
                     var blob = container.GetBlobClient(fileName);
